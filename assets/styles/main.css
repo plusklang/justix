@@ -283,14 +283,21 @@ a{
 .form>.form__element>.form__input--occupied + .form__label {
     font-size: 11px;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 11px;
+    top: 20px;
 }
 
 .form .form__requirements{
+    display: none;
     color: #ed677a;
     max-width: 180px;
     margin: 5px auto 5px auto;
 }
+
+.form--error .form__requirements{
+    display: block;
+}
+
 .form .form__submit{
     display: block;
     width: 100%;
