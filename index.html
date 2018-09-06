@@ -10,7 +10,55 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
 </head>
 <body>
+<header class="header" id="header">
+    <a href="#" class="header__logo"></a>
+    <a href="#" class="header__hamburger" id="hamburger"></a>
+    <nav class="header__nav">
+        <ul>
+            <li><a href="#">Menulink 1</a></li>
+            <li><a href="#">Menulink 2</a></li>
+            <li><a href="#"></a>Menulink 3</li>
+        </ul>
+    </nav>
+</header>
+<div class="content">
 
+    <section class="login">
+        <form class="form form--error" id="login-form" action="" method="post">
+            <header class="form__header">
+                <h1 class="form__title">Hello, Lawyer!</h1>
+                <p class="form__info">Please log in with your credentials.</p>
+            </header>
+
+            <div class="form__element">
+                <input class="form__input" id="email" type="text" name="email" required pattern="[^]+@[^]+[.][a-z]{2,63}$" autocomplete="email">
+                <label class="form__label" for="email">Email</label>
+
+            </div>
+
+            <div class="form__element">
+                <input class="form__input" id="password" type="password" name="password" autocomplete="current-password">
+                <label class="form__label" for="password">Password</label>
+                <div class="form__btn-reveal"></div>
+            </div>
+            <p class="form__requirements">Please check your login  credentials and try again.</p>
+            <input class="form__submit btn" type="submit" value="Log In">
+
+            <a class="form__pw-link" href="#">Forgot your password?</a>
+        </form>
+    </section>
+    <section class="more">
+        <div class="more__wrapper">
+            <header class="more__header">
+                <h1 class="more__title"> <span>Not yet a</span>Hello Lawyer?</h1>
+            </header>
+            <p class="more__description">Find out how joining HelloLaw can improve your business with a high quality network of lawyers and clients.</p>
+            <a href="#" class="more__btn btn btn--orange">I want to know more</a>
+        </div>
+    </section>
+
+
+</div>
 
 <script type="text/javascript" src="assets/scripts/main.js"></script>
 </body>
